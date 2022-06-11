@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/idRLBSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_shade_1"
+    android:padding="4dp">
+
+    <!--User name-->
+    <TextView
+        android:id="@+id/idTVUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:padding="4dp"
+        android:text="User Name"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <!--User image-->
+    <ImageView
+        android:id="@+id/idIVUserImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/idTVUserName"
+        android:layout_centerVertical="true"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <!--User description-->
+    <TextView
+        android:id="@+id/idTVUserDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVUserName"
+        android:layout_margin="4dp"
+        android:layout_toEndOf="@id/idIVUserImage"
+        android:layout_toRightOf="@id/idIVUserImage"
+        android:padding="3dp"
+        android:text="Description"
+        android:textColor="@color/white" />
+
+    <!--User Role-->
+    <TextView
+        android:id="@+id/idTVUserRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVUserDesc"
+        android:layout_margin="4dp"
+        android:layout_toRightOf="@id/idIVUserImage"
+        android:padding="3dp"
+        android:text="Role "
+        android:textColor="@color/white" />
+
+    <!--User age-->
+    <TextView
+        android:id="@+id/idTVUserAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVUserRole"
+        android:layout_margin="4dp"
+        android:layout_toRightOf="@id/idIVUserImage"
+        android:padding="3dp"
+        android:text="Age"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVUserAge"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <!--button for editing User-->
+        <Button
+            android:id="@+id/idBtnEditUser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:text="Edit User"
+            android:textAllCaps="false" />
+
+        <!--button for viewing User details-->
+        <Button
+            android:id="@+id/idBtnVIewDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:text="View Details"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</RelativeLayout>
