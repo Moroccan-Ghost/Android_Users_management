@@ -44,7 +44,7 @@ public class UserRVAdapter extends RecyclerView.Adapter<UserRVAdapter.ViewHolder
         // setting data to our recycler view item.
         UserRVModal UserRVModal = UserRVModalArrayList.get(position);
         holder.UserTV.setText(UserRVModal.getUserName());
-        holder.UserPriceTV.setText(UserRVModal.getUserAge() + " years Old");
+        holder.UserAgeTV.setText(UserRVModal.getUserAge() + " years Old");
 
         // adding animation to recycler view item.
         setAnimation(holder.itemView, position);
@@ -73,14 +73,14 @@ public class UserRVAdapter extends RecyclerView.Adapter<UserRVAdapter.ViewHolder
     public static class ViewHolder extends RecyclerView.ViewHolder {
         // creating variable for our image view and text view on below line.
         private ImageView UserIV;
-        private TextView UserTV, UserPriceTV;
+        private TextView UserTV, UserAgeTV;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             // initializing variables.
             UserIV = itemView.findViewById(R.id.idIVUser);
             UserTV = itemView.findViewById(R.id.idTVUserName);
-            UserPriceTV = itemView.findViewById(R.id.idTVUserAge);
+            UserAgeTV = itemView.findViewById(R.id.idTVUserAge);
         }
     }
 
