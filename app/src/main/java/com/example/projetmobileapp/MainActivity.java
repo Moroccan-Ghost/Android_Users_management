@@ -190,15 +190,15 @@ public class MainActivity extends AppCompatActivity implements UserRVAdapter.Use
         // and initialing them with their ids.
         TextView UserNameTV = layout.findViewById(R.id.idTVUserName);
         TextView UserDescTV = layout.findViewById(R.id.idTVUserDesc);
-        TextView suitedForTV = layout.findViewById(R.id.idTVUserRole);
-        TextView priceTV = layout.findViewById(R.id.idTVUserAge);
+        TextView UserRoleTV = layout.findViewById(R.id.idTVUserRole);
+        TextView AgeTV = layout.findViewById(R.id.idTVUserAge);
         ImageView UserIV = layout.findViewById(R.id.idIVUser);
 
         //setting data to different views.
         UserNameTV.setText(modal.getUserName());
         UserDescTV.setText(modal.getUserDescription());
-        suitedForTV.setText("Role :  " + modal.getUserRole());
-        priceTV.setText("Age : " + modal.getUserAge() + " years Old");
+        UserRoleTV.setText("Role :  " + modal.getUserRole());
+        AgeTV.setText("Age : " + modal.getUserAge() + " years Old");
         Picasso.get().load(modal.getUserLink()).into(UserIV);
         Button viewBtn = layout.findViewById(R.id.idBtnVIewDetails);
         Button editBtn = layout.findViewById(R.id.idBtnEditUser);
